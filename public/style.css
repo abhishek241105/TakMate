@@ -1,0 +1,124 @@
+
+/* Basic page styling */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Main heading */
+
+h1 {
+    color: #333;
+}
+
+/* Todo container */
+
+.todo-container {
+    background-color: white;
+    width: 400px;
+    margin: 30px auto;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Input field */
+
+input {
+    padding: 10px;
+    width: 65%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Add button */
+
+button {
+    padding: 10px 15px;
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #1d4ed8;
+}
+
+/* Task list */
+
+ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #f9fafb;
+    border-radius: 6px;
+}
+
+input[type="checkbox"] {
+    width: auto;
+    margin: 0;
+}
+/* Edit button */
+
+li button {
+    background-color: #16a34a;
+    padding: 6px 12px;
+    font-size: 13px;
+}
+
+li button:hover {
+    background-color: #15803d;
+}
+li span {
+    display: inline-block;
+}
+
+li span[style*="line-through"] {
+    color: #888;
+}
+/* Responsive Design */
+
+.todo-container {
+    box-sizing: border-box;
+    max-width: 100%;
+}
+
+@media (max-width: 480px) {
+
+    body {
+        padding: 10px;
+    }
+
+    .todo-container {
+        width: 100%;
+        padding: 18px;
+    }
+
+    input[type="text"] {
+        width: 100%;
+        box-sizing: border-box;
+        margin-bottom: 10px;
+    }
+
+    li {
+        flex-wrap: wrap;
+    }
+
+}
